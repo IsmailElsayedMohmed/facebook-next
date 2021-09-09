@@ -1,0 +1,12 @@
+.animationBorder {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: rotate 4s ease-in-out 0 reverse infinite !important;
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+}

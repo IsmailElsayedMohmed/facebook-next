@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.animationBorder {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: rotate 4s ease-in-out 0 reverse infinite !important;
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+}
+@layer utilities {
+  .flexs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
